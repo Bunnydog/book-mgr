@@ -11,12 +11,17 @@
         <a-tab-pane key="1" tab="登录">
           <div class="item">
             <a-input size="large" placeholder="账号">
-              <a-icon slot="prefix" type="user" >
-              123</a-icon>
+              <template #prefix>
+                <UserOutlined />
+              </template>
             </a-input>
           </div>
           <div class="item">
-            <a-input size="large" type="password" placeholder="密码" />
+            <a-input size="large" type="password" placeholder="密码">
+              <template #prefix>
+                <LockOutlined />
+              </template>
+            </a-input>
           </div>
           <div class="item">
             <a href="javascript:;">忘记密码</a>
@@ -26,15 +31,29 @@
             <a-button size="large" type="primary"> 登入 </a-button>
           </div>
         </a-tab-pane>
+
         <a-tab-pane key="2" tab="注册">
           <div class="item">
-            <a-input size="large" placeholder="账号" />
+            <a-input size="large" placeholder="账号">
+              <template #prefix>
+                <UserOutlined />
+              </template>
+            </a-input>
           </div>
           <div class="item">
-            <a-input size="large" type="password" placeholder="密码" />
+            <a-input size="large" type="password" placeholder="密码">
+              <template #prefix>
+                <LockOutlined />
+              </template>
+            </a-input>
           </div>
           <div class="item">
-            <a-input size="large" placeholder="邀请码" />
+            <a-input size="large" placeholder="邀请码" >
+             
+              <template #prefix>
+                 <MailOutlined />
+              </template>
+            </a-input>
           </div>
           <div class="item">
             <a-button size="large" type="primary"> 注册 </a-button>
